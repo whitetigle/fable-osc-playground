@@ -10,7 +10,7 @@
   "rollup": {
     "dest": "out/bundle.js",
     // PIXI will be loaded directly from a script tag
-    "external": ["PIXI","osc.js"],
+    "external": ["PIXI"],
     // For plugins, we can pass an object with the names and arguments
     // Fable will automatically require and instantiate the plugins
     // Same as babelPlugins, the prefix (here 'rollup-plugin-') can be omitted

@@ -24,7 +24,8 @@
     "start": "serve --port 4000",
     "sync": "browser-sync start -c bs-config.js",
     "build": "fable",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "proxy":"node proxy.js"
   },
   "keywords": [],
   "author": "François Nicaise",
