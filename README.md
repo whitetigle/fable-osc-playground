@@ -20,9 +20,10 @@ Simple proof of concept for sending osc messages to sonic-pi from a webpage usin
 7. Et voilà! You should hear random notes popping every 1/2 sec
 
 ## Notes
-- This project a simple proof of concept to interact with Sonic-Pi from a web page.
 - The proxy file (Js at the moment, F# later :smile:) allows the web page to send osc commands via a web socket. The proxy then forwards the osc message to Sonic PI via udp (localhost port 4559)
-
+- When the music is playing, sonic-pi is expecting a value from the `/kyb` command.
+- in **index.fsx**, `/kyb` can be replaced by whatever command like `/myCommand`, but the **music.rb** code must be updated accordingly
+- then only the first argument is used `/kyb 52`, for instance to play midi note 52.
 
 ## Credits
 - loading bar from http://loading.io/
