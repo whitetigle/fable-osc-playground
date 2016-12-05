@@ -14,6 +14,7 @@ Fable project for testing the sending of osc messages to sonic-pi
 4. Start ws/udp proxy with `npm start proxy`
 5. build the project using `npm run build`
 6. serve index.html with `npm start`
+7. browse to http://localhost:4000
 7. Et voilà! You should hear random notes popping every 1/2 sec
 
 ## Notes
