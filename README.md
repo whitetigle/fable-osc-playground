@@ -1,6 +1,8 @@
 # fable-osc-playground
 Fable project for testing the sending of osc messages to sonic-pi 
 
+![Wip Demo](https://raw.githubusercontent.com/whitetigle/fable-osc-playground/master/out/wip.png)
+
 - `npm install` to install dependencies.
 - `npm run build` of `fable` to compile the F# code to JS. + watch
 - `npm start` to fire up a local server and open the sample web page.
