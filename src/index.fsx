@@ -27,9 +27,13 @@ let oscPort : WebSocketPort = wsp(createObj
 )
   
 let openp() = 
+  // connect to teh web socket
   oscPort.``open``()
+
   let send() = 
     let note = JS.Math.random() * 20. + 40.
+    // send the note to our sonic-pi music
+    // using kyb variable
     oscPort.send (
       createObj ["address" ==> "/kyb";"args" ==> int note]
     )
@@ -37,5 +41,6 @@ let openp() =
   //send()
   Browser.window.setInterval( send, 500. ) |> ignore
 
+// wait before opening the connection to the web socket
 Browser.window.setTimeout( openp, 3000. )
 printfn "starting"
