@@ -31,8 +31,8 @@ Simple proof of concept for sending osc messages to sonic-pi from a webpage usin
 - sonic pi score from https://gist.github.com/rbnpi/ca5e80258c0c1296b1c6c3974060b3ce
 - websocket/udp proxy code updated from https://dimitrisfousteris.wordpress.com/2014/12/07/websocket-udp-proxy-with-node-js/
 
-Made while drinking :coffee: by @whitetigle 
+Made while drinking :coffee: by [@whitetigle](https://github.com/whitetigle) 
 
-Powered by @fable-compiler :rocket: 
+Powered by [@fable-compiler](https://github.com/fable-compiler) :rocket: 
 
-and sonic-pi from @samaaron :sparkles:
+and [sonic-pi](https://github.com/samaaron/sonic-pi) from [@samaaron](https://github.com/samaaron) :sparkles:
