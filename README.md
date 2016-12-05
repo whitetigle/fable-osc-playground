@@ -22,4 +22,7 @@ Fable project for testing the sending of osc messages to sonic-pi
 - sonic pi score from https://gist.github.com/rbnpi/ca5e80258c0c1296b1c6c3974060b3ce
 
 Made with :heart: Code by @whitetigle 
-Powered by @fable-compiler :rocket: and sonic-pi from @samaaron :sparkles:
+
+Powered by @fable-compiler :rocket: 
+
+and sonic-pi from @samaaron :sparkles:
