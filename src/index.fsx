@@ -7,18 +7,10 @@
 *)
 
 #r "../node_modules/fable-core/Fable.Core.dll"
-#r "../node_modules/fable-powerpack/Fable.PowerPack.dll"
-#load "../node_modules/fable-import-pixi/Fable.Import.Pixi.fs"
-#load "Easing.fsx"
 
-open System
-open System.Collections.Generic
 open Fable.Core
 open Fable.Core.JsInterop
-open Fable.Import.PIXI
-open Fable.Import.PIXI.extras
 open Fable.Import
-open Fable.PowerPack
 
 // Types -------------------------------------------
 type WebSocketPort =
@@ -30,7 +22,9 @@ let osc : obj = jsNative
 [<Emit("new osc.WebSocketPort($0)")>]
 let wsp(conn:obj): WebSocketPort = jsNative
 
-let oscPort : WebSocketPort = wsp(createObj["url" ==> "ws://localhost:8081"])
+let oscPort : WebSocketPort = wsp(createObj
+  ["url" ==> "ws://localhost:8081"]
+)
   
 let openp() = 
   oscPort.``open``()
