@@ -1,5 +1,5 @@
 # fable-osc-playground
-Fable project for testing the sending of osc messages to sonic-pi 
+Simple proof of concept for sending osc messages to sonic-pi from a webpage using Fable/F#
 
 ![Wip Demo](https://raw.githubusercontent.com/whitetigle/fable-osc-playground/master/out/wip.png)
 
