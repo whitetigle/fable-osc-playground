@@ -332,7 +332,7 @@ function padLeft(str, len, ch, isRight) {
     }return str;
 }
 
-var oscPort = new osc.WebSocketPort({
+var oscPort = new osc.IWebSocketPort({
   url: "ws://localhost:8081"
 });
 function openp() {

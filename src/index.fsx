@@ -13,27 +13,25 @@ open Fable.Core.JsInterop
 open Fable.Import
 
 // Types -------------------------------------------
-type WebSocketPort =
+type IWebSocketPort =
   abstract ``open``: unit->unit
   abstract send: obj -> unit 
 
 [<Global>]
 let osc : obj = jsNative
-[<Emit("new osc.WebSocketPort($0)")>]
-let wsp(conn:obj): WebSocketPort = jsNative
+[<Emit("new osc.IWebSocketPort($0)")>]
+let wsp(conn:obj): IWebSocketPort = jsNative
 
-let oscPort : WebSocketPort = wsp(createObj
-  ["url" ==> "ws://localhost:8081"]
-)
+let oscPort : IWebSocketPort = wsp(createObj ["url" ==> "ws://localhost:8081"])
   
 let openp() = 
-  // connect to teh web socket
+  // connect to the web socket
   oscPort.``open``()
 
   let send() = 
     let note = JS.Math.random() * 20. + 40.
     // send the note to our sonic-pi music
-    // using kyb variable
+    // using kyb controller
     oscPort.send (
       createObj ["address" ==> "/kyb";"args" ==> int note]
     )
